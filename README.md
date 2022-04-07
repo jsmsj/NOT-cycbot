@@ -53,7 +53,7 @@ Moreover i have made this bot in a way that you can use specific modules which y
 
 ## Progress Checklist for "NOT-cycbot" :
 Short term Goals: 
-- [ ] Moderation Commands
+- [x] Moderation Commands
 - [ ] Utility
 - [ ] General Commands
 - [ ] Starboard system
@@ -72,3 +72,10 @@ Long term goals
 - [ ] Add Heroku Support !!
 
 
+## How to host ?
+
+### Not recommended right now.
+
+1. Change the values in .env_sample file and rename it to .env
+2. In the command prompt do, `pip install -r requirements.txt`
+3. Run `main.py` file.

@@ -1,1 +1,1 @@
-print("Hello World")
+print("Welcome to NOT-cycbot")

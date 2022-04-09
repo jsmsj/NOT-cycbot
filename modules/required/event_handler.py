@@ -30,7 +30,7 @@ class EventHandler(commands.Cog):
                     if "drive.google.com" in i:
                         try:
                             gdrive_id = gd_funcs.getIdFromUrl(i)
-                            size = 0
+                            size = int(gd_funcs.file_or_folder_size(gdrive_id))
                             async with self.bot.link_db.cursor() as cursor:
                                 await cursor.execute("SELECT * FROM links WHERE channel_id = ? AND gdrive_id = ?",(message.channel.id,gdrive_id,))
                                 fetched_data = await cursor.fetchone()

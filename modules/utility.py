@@ -5,6 +5,7 @@ import data.secrets
 import datetime
 import time
 from main import _start_time
+import _helpers.general_functions as funcs
 
 class Utility(commands.Cog):
     """Utility commands"""
@@ -68,10 +69,9 @@ class Utility(commands.Cog):
         memrole = member.roles
         memrole.pop(0)
         em.add_field(name=f"Roles [{len(memrole)}]",value=' '.join([x.mention for x in memrole]),inline=False)
-        em.add_field(name="Contributor Stats",value="TODO")
+        contribution_stats = await funcs.give_contribution_stats(member.id,self.bot)
+        em.add_field(name="Contributor Stats",value=contribution_stats)
         await ctx.send(embed=em)
-
-        
     
 
         

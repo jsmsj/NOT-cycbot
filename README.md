@@ -75,7 +75,7 @@ Long term goals
 - [ ] Add Heroku Support !!
 
 ## TODO:
-- [ ] Contributor Stats in `whois` command
+- [x] Contributor Stats in `whois` command
 
 ## Commands Table:
 

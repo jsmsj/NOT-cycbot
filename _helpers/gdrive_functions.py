@@ -1,6 +1,7 @@
 import re
 import urllib.parse as urlparse
 from urllib.parse import parse_qs
+from _helpers.file_size_check import GoogleDriveSizeCalculate,service
 
 def getIdFromUrl(link: str):
     # if len(link) in [33, 19]:
@@ -25,3 +26,8 @@ def make_url(source):
         else:
             sour = "http://drive.google.com/open?id=" + source
             return sour
+
+def file_or_folder_size(gdrive_id):
+    calculator = GoogleDriveSizeCalculate(service)
+    result = calculator.gdrive_checker(gdrive_id)
+    return result["bytes"]

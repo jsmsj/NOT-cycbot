@@ -69,9 +69,9 @@ class Utility(commands.Cog):
         memrole.pop(0)
         em.add_field(name=f"Roles [{len(memrole)}]",value=' '.join([x.mention for x in memrole]),inline=False)
         em.add_field(name="Contributor Stats",value="TODO")
-
-
         await ctx.send(embed=em)
+
+        
     
 
         

@@ -19,3 +19,10 @@ embed_colour = discord.Color.from_rgb(int(r),int(g),int(b))
 
 bot_owner_id = int(os.getenv("bot_owner_id"))
 
+valid_posting_channel_ids_temp = os.getenv("where_to_post_channel_ids").replace(" ","").split(",")
+
+allowed_channel_ids = [int(x) for x in valid_posting_channel_ids_temp]
+
+error_channel = int(os.getenv("send_error_channel_id"))
+
+

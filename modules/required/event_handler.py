@@ -30,13 +30,13 @@ class EventHandler(commands.Cog):
                     if "drive.google.com" in i:
                         try:
                             gdrive_id = gd_funcs.getIdFromUrl(i)
-                            size = int(gd_funcs.file_or_folder_size(gdrive_id))
                             async with self.bot.link_db.cursor() as cursor:
                                 await cursor.execute("SELECT * FROM links WHERE channel_id = ? AND gdrive_id = ?",(message.channel.id,gdrive_id,))
                                 fetched_data = await cursor.fetchone()
                                 if fetched_data:
                                     await message.reply(f"The Google drive link <{gd_funcs.make_url(gdrive_id)}> has already been posted here before !! Please do not repost the same links.")
                                 else:
+                                    size = int(gd_funcs.file_or_folder_size(gdrive_id))
                                     await cursor.execute("INSERT INTO links (channel_id,message_id,user_id,gdrive_id,object_size) VALUES (?,?,?,?,?)",(message.channel.id,message.id,message.author.id,gdrive_id,size))
                             await self.bot.link_db.commit()
                             await message.add_reaction("⭐")

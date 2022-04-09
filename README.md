@@ -55,17 +55,17 @@ Moreover i have made this bot in a way that you can use specific modules which y
 Short term Goals: 
 - [x] Moderation Commands
 - [x] Utility
-- [ ] Add database + other stuff
+- [x] Add database + other stuff
 - [ ] Google Drive Utilities
 - [ ] General Commands
 - [ ] Starboard system
 
 Mid term Goals: 
 - [ ] Help for all commands
-- [ ] Auto starring a message with google drive links
+- [x] Auto starring a message with google drive links
 - [ ] Levelling system
 - [ ] Logging commands
-- [ ] Stats commands
+- [x] Stats commands
 - [ ] Request Tracker
 - [ ] Error handling
 
@@ -93,6 +93,12 @@ Long term goals
 `ping` | ✅
 `uptime` | ✅
 `whois` | ✅
+
+### Stats :
+
+"Cycbot" command | Has been implemented in this bot ? 
+:---------------- | :--------------------------------:
+`stats`           | ✅
 
 
 

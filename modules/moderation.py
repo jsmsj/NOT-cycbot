@@ -16,7 +16,7 @@ class Moderation(commands.Cog):
         await ctx.trigger_typing()    
         return
 
-    @commands.command(aliases=['clear'])
+    @commands.command()
     @commands.has_role(data.secrets.moderator_role_id)
     async def purge(self, ctx, amount=10):
         """Deletes n number of messages from any channel. There are no limits or date restrictions for this function - use with caution. Default 10."""

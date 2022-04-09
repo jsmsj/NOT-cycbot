@@ -54,22 +54,52 @@ Moreover i have made this bot in a way that you can use specific modules which y
 ## Progress Checklist for "NOT-cycbot" :
 Short term Goals: 
 - [x] Moderation Commands
-- [ ] Utility
+- [x] Utility
+- [ ] Add database + other stuff
+- [ ] Google Drive Utilities
 - [ ] General Commands
 - [ ] Starboard system
 
 Mid term Goals: 
+- [ ] Help for all commands
 - [ ] Auto starring a message with google drive links
 - [ ] Levelling system
-- [ ] Google Drive Utilities
 - [ ] Logging commands
 - [ ] Stats commands
 - [ ] Request Tracker
+- [ ] Error handling
 
 
 Long term goals
 - [ ] Convert all commands to Slash Commands as well.
 - [ ] Add Heroku Support !!
+
+## TODO:
+- [ ] Contributor Stats in `whois` command
+
+## Commands Table:
+
+### Moderation :
+
+"Cycbot" command | Has been implemented in this bot ? 
+:---------------- | :--------------------------------:
+`purge`           | ✅
+
+### Utility :
+
+"Cycbot" command | Has been implemented in this bot ? 
+:---------------- | :--------------------------------:
+`avatar`           | ✅
+`ping` | ✅
+`uptime` | ✅
+`whois` | ✅
+
+
+
+
+
+
+
 
 
 ## How to host ?

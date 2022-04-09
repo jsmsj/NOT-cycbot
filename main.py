@@ -2,6 +2,7 @@ from discord.ext import commands
 import discord
 import data.secrets
 import os
+import time
 
 intents = discord.Intents.all()
 
@@ -10,6 +11,8 @@ bot = commands.Bot(command_prefix=data.secrets.bot_prefix, help_command=None, in
 @bot.event
 async def on_ready():
     print("Bot is ready!")
+
+_start_time = time.time()
 
 
 if __name__ == '__main__':

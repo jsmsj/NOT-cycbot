@@ -179,7 +179,7 @@ service =  build('drive', 'v3', credentials=credentials, cache_discovery=False)
 # IF YOU USING A SERVICE ACCOUNT IN NAME some_service_account.json
 # ╾──────────────────────────────────────────────────────────────╼
 # Required some_service_account.json file
-credentials = service_account.Credentials.from_service_account_file(r'data\accounts\1.json',scopes=oauth_scope)
+credentials = service_account.Credentials.from_service_account_file(r'assets\service_accounts\1.json',scopes=oauth_scope)
 service =  build('drive', 'v3', credentials=credentials, cache_discovery=False)
 
 

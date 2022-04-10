@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
 import os
 import discord
+import _helpers.gdrive_functions as gd_funcs
 
 load_dotenv()
 
@@ -24,5 +25,7 @@ valid_posting_channel_ids_temp = os.getenv("where_to_post_channel_ids").replace(
 allowed_channel_ids = [int(x) for x in valid_posting_channel_ids_temp]
 
 error_channel = int(os.getenv("send_error_channel_id"))
+
+default_clone_dest_id = gd_funcs.getIdFromUrl(os.getenv("default_clone_destination_id"))
 
 

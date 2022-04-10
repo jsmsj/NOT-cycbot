@@ -56,7 +56,7 @@ Short term Goals:
 - [x] Moderation Commands
 - [x] Utility
 - [x] Add database + other stuff
-- [ ] Google Drive Utilities
+- [x] Google Drive Utilities
 - [ ] General Commands
 - [ ] Starboard system
 
@@ -72,7 +72,7 @@ Mid term Goals:
 
 Long term goals
 - [ ] Convert all commands to Slash Commands as well.
-- [ ] Add Heroku Support !!
+- [ ] Add Heroku Support + shift to MongoDB !!
 
 ## TODO:
 - [x] Contributor Stats in `whois` command
@@ -101,11 +101,23 @@ Long term goals
 `stats`           | ✅
 
 
+### Drive Utils :
+
+"Cycbot" command | Has been implemented in this bot ? 
+:---------------- | :--------------------------------:
+`clone`           | ✅
+`get_urls`        | ❌ (Dont know what this does yet)
+`md5`             | ❌ (Dont know what this does yet)
 
 
+----
 
+## Additional Commands, which are not present in "cycbot"
 
+### Drive Utils :
+\>`size` \<drive url\>
 
+---
 
 
 ## How to host ?

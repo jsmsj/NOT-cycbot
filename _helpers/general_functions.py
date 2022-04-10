@@ -73,7 +73,7 @@ async def generate_stats(id,bot):
 
     iii = 1
     for key,value in category_number.items():  
-        desc += f"├── 📁 {key}:{sum_of_links_for_key(category_number,key)}\n"
+        desc += f"├── 📁 {key}: {sum_of_links_for_key(category_number,key)}\n"
         ii = 1
         for channel,num_of_links in value.items():
             if ii < len(value.items()):

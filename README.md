@@ -57,7 +57,7 @@ Short term Goals:
 - [x] Utility
 - [x] Add database + other stuff
 - [x] Google Drive Utilities
-- [ ] General Commands
+- [x] General Commands
 - [ ] Starboard system
 
 Mid term Goals: 
@@ -108,6 +108,19 @@ Long term goals
 `clone`           | ✅
 `get_urls`        | ❌ (Dont know what this does yet)
 `md5`             | ❌ (Dont know what this does yet)
+
+
+### General :
+
+"Cycbot" command | Has been implemented in this bot ? 
+:---------------- | :--------------------------------:
+`about`           | ✅
+`invite`           | ✅
+`secret`            | ❌ (Dont know what this does yet)
+`secret`             | ❌ (Dont know what this does yet)
+`state`             | ✅
+
+
 
 
 ----

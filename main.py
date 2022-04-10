@@ -14,7 +14,7 @@ async def on_ready():
     setattr(bot,"link_db",await aiosqlite.connect(r"data\databases\links.db"))
     async with bot.link_db.cursor() as cursor:
         await cursor.execute("CREATE TABLE IF NOT EXISTS links (channel_id INTEGER, message_id INTEGER, user_id INTEGER, gdrive_id TEXT, object_size INTEGER)")
-    
+    await bot.change_presence(activity=discord.Game(name="Megadrive"))
     print("Bot is ready!")
 
 _start_time = time.time()

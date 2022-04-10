@@ -28,4 +28,8 @@ error_channel = int(os.getenv("send_error_channel_id"))
 
 default_clone_dest_id = gd_funcs.getIdFromUrl(os.getenv("default_clone_destination_id"))
 
+bot_version = "1.0.0" #DONOT CHANGE THESE
 
+bot_language = "English"  #DONOT CHANGE THESE
+
+server_invite_link = os.getenv("server_invite_link") + r"                             "

@@ -95,4 +95,14 @@ async def generate_stats(id,bot):
 
     return desc
             
-
+def give_state_desc():
+    desc = "```py\n# Not-cycbot is ready. \n# Extensions:\n\n# "
+    i=1
+    for module in data.secrets.module_list:
+        if i < len(data.secrets.module_list):
+            desc+= f"{module.title()}, "
+        else:
+            desc +=module.title()
+        i+=1
+    desc += "\n```"
+    return desc

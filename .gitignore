@@ -5,4 +5,4 @@ venv/
 *.pyc
 *__pycache__/
 *.json
-
+*.db-journal

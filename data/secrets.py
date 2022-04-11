@@ -33,3 +33,7 @@ bot_version = "1.0.0" #DONOT CHANGE THESE
 bot_language = "English"  #DONOT CHANGE THESE
 
 server_invite_link = os.getenv("server_invite_link") + r"                             "
+
+starboard_channel_id = int(os.getenv("starboard_channel_id"))
+
+minimum_stars_required = int(os.getenv("minimum_stars_required"))

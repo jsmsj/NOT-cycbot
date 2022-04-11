@@ -24,7 +24,7 @@ class EventHandler(commands.Cog):
     async def on_message(self,message):
         if message.author.id == self.bot.user.id: return
         if message.author.bot: return
-        if message.channel.id in data.secrets.allowed_channel_ids:
+        if self.bot.is_ready() and message.channel.id in data.secrets.allowed_channel_ids:
             list_of_urls = funcs.find_all_urls_in_str(message.content)
             if len(list_of_urls) !=0:
                 for i in list_of_urls:

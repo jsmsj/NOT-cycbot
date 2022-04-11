@@ -12,8 +12,13 @@ bot = commands.Bot(command_prefix=data.secrets.bot_prefix, help_command=None, in
 @bot.event
 async def on_ready():
     setattr(bot,"link_db",await aiosqlite.connect(r"data\databases\links.db"))
+    setattr(bot,"star_db",await aiosqlite.connect(r"data\databases\stars.db"))
     async with bot.link_db.cursor() as cursor:
         await cursor.execute("CREATE TABLE IF NOT EXISTS links (channel_id INTEGER, message_id INTEGER, user_id INTEGER, gdrive_id TEXT, object_size INTEGER)")
+
+    async with bot.star_db.cursor() as cursor:
+        await cursor.execute("CREATE TABLE IF NOT EXISTS stars (channel_id INTEGER,msgauthorid INTEGER, messageid INTEGER, starboardmsgid INTEGER, numstars INTEGER)")
+        await cursor.execute("CREATE TABLE IF NOT EXISTS star_stats (msg_author_id INTEGER, num_stars INTEGER , starrer_userid INTEGER)")
     await bot.change_presence(activity=discord.Game(name="Megadrive"))
     print("Bot is ready!")
 

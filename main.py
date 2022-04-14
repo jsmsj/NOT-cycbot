@@ -18,7 +18,7 @@ async def on_ready():
 
     async with bot.star_db.cursor() as cursor:
         await cursor.execute("CREATE TABLE IF NOT EXISTS stars (channel_id INTEGER,msgauthorid INTEGER, messageid INTEGER, starboardmsgid INTEGER, numstars INTEGER)")
-        await cursor.execute("CREATE TABLE IF NOT EXISTS star_stats (msg_author_id INTEGER, num_stars INTEGER , starrer_userid INTEGER)")
+        await cursor.execute("CREATE TABLE IF NOT EXISTS stats (mem_id INTEGER, received INTEGER, given INTEGER, idols TEXT, beta TEXT)")
     await bot.change_presence(activity=discord.Game(name="Megadrive"))
     print("Bot is ready!")
 

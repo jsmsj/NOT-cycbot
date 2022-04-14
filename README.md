@@ -58,7 +58,7 @@ Short term Goals:
 - [x] Add database + other stuff
 - [x] Google Drive Utilities
 - [x] General Commands
-- [ ] Starboard system
+- [x] Starboard system
 
 Mid term Goals: 
 - [ ] Help for all commands
@@ -120,6 +120,13 @@ Long term goals
 `secret`             | ❌ (Dont know what this does yet)
 `state`             | ✅
 
+
+### Starboard :
+
+"Cycbot" command | Has been implemented in this bot ? 
+:---------------- | :--------------------------------:
+`stars`           | ✅
+`stars @member`           | ✅
 
 
 
